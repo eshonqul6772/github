@@ -1,0 +1,11 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0D1117;
+}
+
+main{
+    flex-grow: 1;
+}

@@ -1,0 +1,151 @@
+.header {
+  padding: 15px 0;
+  background-color: #161b22;
+  // position:fixed;
+  // top: 0;
+
+  .containers {
+    max-width: 1450px;
+    padding: 0 25px;
+    margin: 0 auto;
+  }
+
+  &__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav{
+
+      &__list{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0 20px;
+      }
+    }
+  }
+
+  &__input {
+    width: 300px;
+    background-color: #000 !important;
+    border: 1px solid rgb(113, 104, 104);
+    border-radius: 4px;
+    padding: 0;
+
+
+  }
+
+  &__link {
+    transition: 0.4s ease;
+    font-size: 15px;
+
+    &:hover {
+      color: red !important;
+    }
+  }
+
+  .search-btn {
+    position: absolute;
+    bottom: 1px;
+    right: -15px;
+    transform: translate(-50%);
+    border: none;
+    background: transparent;
+
+    .search-btn-icon {
+      padding: 2px;
+      border: 1px solid #c9d1d9;
+      border-radius: 4px;
+      font-size: 12px;
+
+      &:hover {
+        background-color: rgb(32, 31, 31);
+      }
+    }
+  }
+
+  .your-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: #161b22;
+  }
+
+  .add-repo {
+    background-color: transparent;
+    border: none;
+  }
+
+  .my-repo {
+    position: absolute;
+    top: 40px;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    border-radius: 5px;
+    background-color: #161b22;
+    border: 1px solid rgb(138, 135, 131);
+    color: #c9d1d9;
+    z-index: 100000;
+    transform: translate(-50%);
+
+    &__item {
+      font-size: 14px;
+      padding: 2px 15px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(24, 75, 152);
+      }
+    }
+  }
+}
+
+.icon {
+  position: absolute;
+  right: -10px;
+}
+
+
+.resul-menu{
+  background-color: black;
+  position: absolute;
+  z-index: 100000;
+  top: 26px;
+  width: 100%;
+  transition: all 1s linear;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid rgb(156, 159, 159);
+  
+
+  .result-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+
+    li{
+      padding: 5px 15px;
+      visibility: hidden;
+      border-top: 1px solid rgb(156, 159, 159);
+      border-bottom: 1px solid rgb(156, 159, 159);
+
+
+      &:hover{
+        background-color: blue;
+        color:white;
+      }
+    }
+  }
+
+  .resul-bottom{
+    padding: 5px 15px;
+  }
+}

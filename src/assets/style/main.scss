@@ -1,0 +1,9 @@
+@import "../style/base/base";
+@import "../style/base/normalasthe";
+@import "../style/base/typegrouf";
+@import "../style/base/thems";
+
+
+:root{
+  @include thems-color;
+}
